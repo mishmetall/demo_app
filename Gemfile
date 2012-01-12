@@ -5,7 +5,11 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development, :test do
+  # gems specifically for me go here
+  gem 'sqlite3'
+end
+
 
 gem 'rb-fsevent', :require => true if (RUBY_PLATFORM =~ /darwin/i)
 
